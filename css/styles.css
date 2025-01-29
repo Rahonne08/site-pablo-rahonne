@@ -1,7 +1,7 @@
 :root {
-    --primary: #0d6405;
-    --secondary: #50f011; /* 101, 55, 128 */
-    --tertiary : #a31414;
+    --primary: #3F1651;
+    --secondary: #F89F5B; /* 101, 55, 128 */
+    --tertiary : #653780;
     --text-color: #FFF;
     --text-secondary: #000;
     --text-tertiary: #5d5d5d;
@@ -17,7 +17,7 @@
 /* event form */
 
 #subscription {
-    background: linear-gradient(rgba(209, 24, 18, 0.904), rgba(11, 2, 15, 0.8)), url("../img/subscription.png");
+    background: linear-gradient(rgba(63, 22, 81, 0.8), rgba(63, 22, 81, 0.8)), url("../img/subscription.png");
     background-position: center;
     background-size: cover;
     height: 85vh;
@@ -34,9 +34,10 @@
 }
 
 #disclaimer h1 {
-    font-size: 3.5em;
+    font-size: 5.0em;
     font-weight: 800;
     margin-bottom: 1em;
+    font-family: "Smooch Sans", serif;
 }
 
 #disclaimer .about-me {
@@ -57,7 +58,6 @@
     font-weight: bold;
 }
 
-
 /* benefits */
 
 #key-benefits h1 {
@@ -66,7 +66,7 @@
     padding: 2em;
     font-weight: bold;
     font-size: 2.3em;
-    color: white;
+    color: var(--primary);
     
 }
 
@@ -258,7 +258,6 @@
     margin-bottom: 1.2em;
     font-size: 2em;
     font-weight: 750;
-    color: #FFF;
 }
 
 .botao-whatsapp {
@@ -286,9 +285,10 @@
 }
 
 #footer h3{
-    font-size: 2em;
+    font-size: 5em;
     font-weight: 800;
-    color: black;
+    color: var(--secondary);
+    font-family: "Smooch Sans", serif;
 }
 
 #footer p {
