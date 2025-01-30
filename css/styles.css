@@ -261,17 +261,66 @@
 }
 
 .botao-whatsapp {
-    background-color: #25d366;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
+    all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.6em 2em;
+  border: mediumspringgreen solid 0.15em;
+  border-radius: 0.25em;
+  color: mediumspringgreen;
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
 }
-.botao-whatsapp:hover {
-    background-color: #1ebc5d;
-}
+.botao-whatsapp p {
+    z-index: 1;
+  }
+  
+  .botao-whatsapp:hover {
+    color: #212121;
+  }
+  
+  .botao-whatsapp:active {
+    border-color: teal;
+  }
+  
+  .botao-whatsapp::after, .botao-whatsapp::before {
+    content: "";
+    position: absolute;
+    width: 9em;
+    aspect-ratio: 1;
+    background: mediumspringgreen;
+    opacity: 50%;
+    border-radius: 50%;
+    transition: transform 500ms, background 300ms;
+  }
+  
+  .botao-whatsapp::before {
+    left: 0;
+    transform: translateX(-8em);
+  }
+  
+  .botao-whatsapp::after {
+    right: 0;
+    transform: translateX(8em);
+  }
+  
+  .botao-whatsapp:hover:before {
+    transform: translateX(-1em);
+  }
+  
+  .botao-whatsapp:hover:after {
+    transform: translateX(1em);
+  }
+  
+  .botao-whatsapp:active:before,
+  .botao-whatsapp:active:after {
+    background: teal;
+  }
 /* footer */
 #footer {
     text-align: center;
